@@ -1,9 +1,38 @@
-footer img {
+:root {
+    --mainDark: #242325;
+    --mainGreen: #61e786;
+    --mainWhite: #fff;
+    --mainGrey: #eeeeee;
+  }
+
+    footer img {
     width: 30px;
     height: 30px;
     }
-a {
+
+    a {
     color: red;
     text-decoration: none;
     background-color: transparent;
+    }
+
+    .banner-info {
+    background: var(--mainGrey);
+    position: relative;
+    }
+
+    .banner-img {
+        min-height: 250px;
+        background: url(../assets/images/bannerBcg.jpeg) center/cover fixed no-repeat;
+        position: relative;
+    }
+
+    .banner-img__footer {
+        background: var(--mainDark);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 104px;
+        display: flex;
+        align-items: center;
     }
