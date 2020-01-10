@@ -1,9 +1,293 @@
+@import "variable";
+
 footer img {
     width: 30px;
     height: 30px;
-    }
+}
+
 a {
-    color: red;
+    color: green;
     text-decoration: none;
     background-color: transparent;
-    }
+}
+
+body {
+    font-family: "Mali", cursive;
+    background: $mainWhite;
+    color: $mainDark;
+}
+
+// FOR BOOTSTRAP 
+/* sourceMappingURL=index.css.map */
+
+/*****This from Boot Strap ***************
+@import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+
+
+/* global */
+.text-green {
+    color: $mainGreen;
+}
+
+.text-slant {
+    font-family: "Caveat", cursive;
+}
+
+.green__btn {
+    color: $mainGreen;
+    border: 0.1rem solid $mainGreen;
+    background: transparent;
+}
+
+.green__btn:hover {
+    background: $mainGreen;
+    color: $mainWhite;
+}
+
+.title-underline {
+    width: 12rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 2rem;
+}
+
+.title-underline__center {
+    position: absolute;
+    height: 0.6rem;
+    background: $mainGreen;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+
+.blockquote {
+    border-left: 0.5rem solid $mainGreen;
+}
+
+/* end of global */
+/* navbar */
+// .navbar {
+//     background: $mainDark !important;
+// }
+
+.phone-icon {
+    color: $mainGreen;
+    border: 0.1rem solid $mainGreen;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+/* end of navbar */
+/* banner */
+.banner-info {
+    min-height: calc(100vh - 101px);
+    background: $mainGrey;
+    position: relative;
+}
+
+.banner-info__footer {
+    background: $mainGreen;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.banner-img {
+    min-height: calc(100vh - 101px);
+    background: url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
+    /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+    position: relative;
+}
+
+.banner-img__footer {
+    background: $mainDark;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+
+/* end of banner */
+/* about img */
+
+.img-container {
+    position: relative;
+}
+
+.featured-icons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.featured-icon-left {
+    background: $mainDark;
+    padding: 0.5rem;
+    display: inline-block;
+    color: $mainWhite;
+}
+
+.featured-icon-right {
+    background: $mainGreen;
+    padding: 0.5rem;
+    display: inline-block;
+    color: $mainWhite;
+}
+
+/* featured */
+.featured {
+    background: $mainGrey;
+}
+
+/* contact section */
+.contact {
+    background: $mainGreen;
+    color: $mainWhite;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 0.1rem solid $mainWhite;
+    color: $mainWhite;
+}
+
+.contact-btn:hover {
+    background: $mainWhite;
+    color: $mainGreen;
+}
+
+/* services section */
+.services,
+.tour {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
+}
+
+.services-info-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $mainGreen;
+    color: $mainWhite !important;
+    margin-bottom: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.services-info-text:hover {
+    color: $mainDark !important;
+    text-decoration: none;
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: $mainGreen;
+    padding: 0.5rem;
+    border: 0.1rem solid $mainGreen;
+    margin-right: 1rem;
+    transition: all 1s ease-in-out;
+}
+
+.service-icon:hover {
+    background: $mainGreen;
+    color: $mainGrey;
+}
+
+.service-link:hover {
+    color: $mainWhite;
+}
+
+/* gallery section */
+.gallery-btn:hover {
+    background: $mainGreen;
+    color: $mainWhite;
+}
+
+.gallery-img-container {
+    position: relative;
+    transition: all 1s linear;
+    overflow: hidden;
+}
+
+.gallery-img-container:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.gallery-img {
+    transition: all 1s linear;
+}
+
+.gallery-img-container:hover .gallery-img {
+    opacity: 0.3;
+}
+
+.gallery-info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    background: $mainGreen;
+    color: $mainWhite;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.gallery-info:hover {
+    text-decoration: none;
+    color: $mainDark;
+}
+
+.gallery-img-container:hover .gallery-info {
+    transform: translate(-50%, 0);
+}
+
+.gallery-icon {
+    position: absolute;
+    color: $mainWhite;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.gallery-img-container:hover .gallery-icon {
+    opacity: 1;
+}
+
+/* tour */
+.tour-icon {
+    color: $mainGreen;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: $mainWhite;
+    border-radius: 30%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.tour-icon:hover {
+    background: $mainGreen;
+    color: $mainWhite;
+}
+
+.footer {
+    background: $mainDark;
+}
+
+
+//END FOR BOOTSTRAP
