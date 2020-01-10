@@ -16,7 +16,7 @@ a {
 
 .banner-img {
   min-height: 250px;
-  background: url(../assets/images/bannerBcg.jpeg) center/cover fixed no-repeat;
+  background: url(../img/bannerBcg.jpeg) center/cover fixed no-repeat;
   position: relative;
 }
 
