@@ -147,29 +147,6 @@ body {
     width: 100%;
 }
 
-.banner-img {
-    min-height: calc(100vh - 101px);
-    background: url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
-    /* background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-    position: relative;
-}
-
-.banner-img__footer {
-    background: $mainDark;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 104px;
-    display: flex;
-    align-items: center;
-}
-
-/* end of banner */
-/* about img */
-
 .img-container {
     position: relative;
 }
